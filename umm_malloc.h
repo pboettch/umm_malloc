@@ -27,6 +27,10 @@ typedef struct UMM_HEAP_INFO_t {
 }
 UMM_HEAP_INFO;
 
+#if defined(__cplusplus)
+extern "C" {
+#endif
+
 extern UMM_HEAP_INFO ummHeapInfo;
 
 void umm_init( void );
@@ -40,6 +44,9 @@ void umm_free( void *ptr );
 
 size_t umm_free_heap_size( void );
 
+#if defined(__cplusplus)
+} /* extern "C" */
+#endif
 
 /* ------------------------------------------------------------------------ */
 
