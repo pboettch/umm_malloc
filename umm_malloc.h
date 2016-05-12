@@ -10,6 +10,8 @@
 
 /* ------------------------------------------------------------------------ */
 
+#include <stddef.h>
+
 #include "umm_malloc_cfg.h"   /* user-dependent */
 
 typedef struct UMM_HEAP_INFO_t {
